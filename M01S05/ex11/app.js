@@ -26,9 +26,13 @@ console.warn(
 );
 function calculateCircleArea(radius) {
   const area = radius * radius * Math.PI;
+
   console.log(area);
+  return area;
 }
-calculateCircleArea();
+calculateCircleArea(2);
+calculateCircleArea(20);
+calculateCircleArea(16);
 
 console.warn(`Creeaza un obiect numit pet cu urmatoarele metode: getName, getSpecies si getAge.
 Folosind metodele obiectului pet afiseaza propozitia: “nnnn este ssss si are aaaa ani.”
