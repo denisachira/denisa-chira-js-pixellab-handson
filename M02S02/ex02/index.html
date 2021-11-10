@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Person Form</title>
   </head>
+
   <body>
     <form id="personForm">
       <fieldset>
@@ -30,6 +31,36 @@
         <legend>Detalii</legend>
         <input type="text" id="skillInput" placeholder="Add skill" />
         <button type="button" title="Add skill">+</button>
+      </fieldset>
+
+      <label for="hasPets">
+        <input type="checkbox" name="hasPets" id="hasPets" />
+        Has pets?
+      </label>
+
+      <fieldset style="display: none">
+        <legend>Pet details</legend>
+
+        <label for="petName">Pet name</label>
+        <input type="text" name="petName" id="petName" placeholder="Pet name" />
+        <br />
+
+        <label for="petSpecies">Pet species</label>
+        <input
+          type="text"
+          name="petSpecies"
+          id="petSpecies"
+          placeholder="Pet species"
+        />
+        <br />
+
+        <label for="petAge">Pet age</label>
+        <input type="number" name="petAge" id="petAge" placeholder="Pet age" />
+        <br />
+        <br />
+
+        <button type="button" title="Add pet">Add pet</button>
+        <!-- <ul></ul> -->
       </fieldset>
     </form>
 
