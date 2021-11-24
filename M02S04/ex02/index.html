@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
-    <title>CSS animation in JavaScript</title>    
+    <title>CSS animation in JavaScript</title>
     <style>
       .box {
         width: 100px;
-        height: 100px; 
+        height: 100px;
         border: 1px solid #000;
         transition: background-color 1s ease;
       }
-
     </style>
-</head>
-<body>
-  
-  <div class="box"></div>
+  </head>
+  <body>
+    <div class="box"></div>
 
-  <script src="app.js"></script>
-</body>
+    <div class="box-controls">
+      <button type="button" style="background-color: red">Set</button>
+      <button type="button" style="background-color: green">Set</button>
+      <button type="button" style="background-color: blue">Set</button>
+
+      <br /><br />
+
+      <label for="dynamicColor">Color</label>
+      <input type="text" name="dynamicColor" id="dynamicColor" />
+
+      <button title="Dynamic" type="button">Dynamic Color Button</button>
+
+      <div>
+        <button type="button" class="reset">Reset</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
